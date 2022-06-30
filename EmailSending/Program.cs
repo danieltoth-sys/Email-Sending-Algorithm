@@ -21,18 +21,15 @@ public class EmailSending
             string? inputFromUser;
             Console.WriteLine("Where to send?");
             inputFromUser = InputFromUser();
-            
-                mailTo = inputFromUser;
+            mailTo = inputFromUser;
 
             Console.WriteLine("Subject?");
             inputFromUser = InputFromUser();
-            if (!string.IsNullOrEmpty(inputFromUser))
-                subject = inputFromUser;
+            subject = inputFromUser;
 
             Console.WriteLine("Message?");
             inputFromUser = InputFromUser();
-            if (!string.IsNullOrEmpty(inputFromUser))
-                message = inputFromUser;
+            message = inputFromUser;
 
             Email.SendMailTask(mailTo, subject, message);
         }
