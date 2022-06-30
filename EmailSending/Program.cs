@@ -47,7 +47,7 @@ public class EmailSending
     private static string? InputFromUser()
     {
         #pragma warning disable CS8602 // Dereference of a possibly null reference.
-                string input = Console.ReadLine().ToString(); ;
+            string input = Console.ReadLine().ToString();
         #pragma warning restore CS8602 // Dereference of a possibly null reference.
 
         if (string.IsNullOrEmpty(input))
